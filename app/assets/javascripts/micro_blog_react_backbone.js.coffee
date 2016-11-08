@@ -3,7 +3,7 @@ window.MicroBlogReactBackbone =
   Collections: {}
   Views: {}
   Routers: {}
-  initialize: -> alert 'Hello from Backbone!'
+  initialize: -> {}
 
 $(document).ready ->
   MicroBlogReactBackbone.initialize()
