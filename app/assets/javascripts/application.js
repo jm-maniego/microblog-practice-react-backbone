@@ -16,6 +16,9 @@
 //= require underscore
 //= require backbone
 //= require micro_blog_react_backbone
+//= require react
+//= require react_ujs
+//= require components
 //= require_tree ../templates
 //= require_tree ./models
 //= require_tree ./collections
