@@ -3,7 +3,9 @@ window.MicroBlogReactBackbone =
   Collections: {}
   Views: {}
   Routers: {}
-  initialize: -> {}
+  initialize: ->
+    new MicroBlogReactBackbone.Routers.Posts()
+    Backbone.history.start({ pushState: true })
 
 $(document).ready ->
   MicroBlogReactBackbone.initialize()
