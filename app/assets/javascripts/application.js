@@ -18,6 +18,8 @@
 //= require react
 //= require react_ujs
 //= require components
+//= require_tree ./mixins
+//= require_tree ./extensions
 //= require_tree ./models
 //= require_tree ./collections
 //= require_tree ./routers

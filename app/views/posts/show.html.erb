@@ -1,14 +1,3 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Author:</strong>
-  <%= @post.author %>
-</p>
-
-<p>
-  <strong>Text:</strong>
-  <%= @post.text %>
-</p>
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<script type="text/javascript">
+  MicroBlogReactBackbone.post = new MicroBlogReactBackbone.Models.Post(<%= @post.to_json.html_safe %>)
+</script>

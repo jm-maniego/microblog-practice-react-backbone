@@ -14,7 +14,7 @@ MicroBlogReactBackbone.Views.PostTable = class extends React.Component {
           <tbody>
             {this.props.posts.map((post)=> {
               return (
-                <MicroBlogReactBackbone.Views.PostItem key={post.get('id')} post={post} />
+                <MicroBlogReactBackbone.Views.PostRow key={post.get('id')} post={post} />
                 )
             })}
           </tbody>
@@ -24,13 +24,14 @@ MicroBlogReactBackbone.Views.PostTable = class extends React.Component {
   }
 }
 
-MicroBlogReactBackbone.Views.PostItem = class extends React.Component {
+MicroBlogReactBackbone.Views.PostRow = class extends React.Component {
   render() {
     let post = this.props.post;
     return (
       <tr>
         <td>{post.get('author')}</td>
         <td>{post.get('text')}</td>
+        <td><a href={`/posts/${post.get('id')}`}>Show</a></td>
       </tr>
       );
   }
